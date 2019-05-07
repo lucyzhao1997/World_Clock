@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel= "stylesheet" href = "css/index.css"></link>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body onLoad="setInterval('clock()', 1000)"> 	
+		<div class = "main-content">
+			<div class = "row">
+				<div class="intro text-center">
+					<div class="box box-title">
+						<h1>WORLD CLOCK</h1>	
+						<div id="date">----/--/-- ---</div>
+						<div id="time">--:--:--</div>
+						<div id="selector">
+							<select id="city">
+								<option value ="-7">Seattle (USA)</option>
+								<option value ="-5">Chicago (USA)</option>
+								<option value ="-4" selected>Toronto (CANADA)</option>
+								<option value ="1">London (UK)</option>
+								<option value ="2">Cairo (Eygpt)</option>
+								<option value ="3">Helsinki (FINLAND)</option>
+								<option value ="8">Beijing (CHINA)</option>
+								<option value ="9">Tokyo (JAPAN)</option>									
+								<option value ="10">Sydney (AUSTRALIA)</option>							
+							</select>							
+						 </div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</body>
+</html>
