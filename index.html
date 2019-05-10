@@ -23,22 +23,30 @@
 				<div class="intro text-center">
 					<div class="box box-title">
 						<h1>WORLD CLOCK</h1>	
+					</div>
 						<div id="date" class = "dateStyle"></div>
 						<div id="time" class = "timeStyle"></div>
+						
 						<div id="selector">
-							<select id="city">
-								<option value ="-7">Seattle (USA)</option>
-								<option value ="-5">Chicago (USA)</option>
-								<option value ="-4" selected>Toronto (CANADA)</option>
-								<option value ="1">London (UK)</option>
-								<option value ="2">Cairo (Eygpt)</option>
-								<option value ="3">Helsinki (FINLAND)</option>
-								<option value ="8">Beijing (CHINA)</option>
-								<option value ="9">Tokyo (JAPAN)</option>									
-								<option value ="10">Sydney (AUSTRALIA)</option>							
-							</select>							
-						 </div>
-					</div>
+							<div id="options">
+								<select id="city">
+									<option value ="-7">
+										<input class="s-c top" type="radio" name="platform" value="seattle">
+										<input class="s-c bottom" type="radio" name="platform" value="seattle">
+										<span class="label">Seattle (USA)</span>
+										<span class="opt-val">Seattle (USA)</span>										
+									</option>
+									<option value ="-5">Chicago (USA)</option>
+									<option value ="-4" selected>Toronto (CANADA)</option>
+									<option value ="1">London (UK)</option>
+									<option value ="2">Cairo (Eygpt)</option>
+									<option value ="3">Helsinki (FINLAND)</option>
+									<option value ="8">Beijing (CHINA)</option>
+									<option value ="9">Tokyo (JAPAN)</option>									
+									<option value ="10">Sydney (AUSTRALIA)</option>							
+								</select>							
+							</div>
+						 </div>					
 				</div>
 			</div>		
 		</div>
