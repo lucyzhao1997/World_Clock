@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+ 
+$font-family: Lato,Arial;
+body{
+    /*background-color: black;*/
+}
+
+.select-hidden{
+    display:none;
+    visibility: hidden;
+}
+.select{
+    cursor:pointer;
+    display:inline-block;
+    font-family: $font-family;
+    font-size:16pt;
+    height: 40px;
+    padding-left: 20px;
+}
