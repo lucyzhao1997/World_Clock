@@ -1,10 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 body{
-    /*background-color: black;*/
+    background-color: white;
+    font-family: sans-serif;
+
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:0;
+ }
 
 .select-hidden{
     display:none;
     visibility: hidden;
+}
+
+#selector{
+    cursor:pointer;
+    display:inline-block;
+    background-color:rgb(151, 60, 60);
+    font-size:16pt;    
+    padding-left: 20px;
+}
+#city{
+    background-color: coral
 }
