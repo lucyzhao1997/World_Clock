@@ -10,6 +10,13 @@ select {
     -moz-appearance: none;
     appearance: none;
     outline:0;
+    cursor:pointer;
+    border: 0 !important;
+    background: #2c3e50;
+    line-height: 2;
+ }
+ select::-ms-expand{
+     /*display: none;*/
  }
 
 .select-hidden{
@@ -17,13 +24,35 @@ select {
     visibility: hidden;
 }
 
-#selector{
+.selector{
     cursor:pointer;
     display:inline-block;
-    background-color:rgb(151, 60, 60);
+    position:relative;
+    background-color:#2c3e50;
     font-size:16pt;    
-    padding-left: 20px;
+    padding-left: 0px;
+    overflow:hidden;
+    border-radius: .5em;
 }
-#city{
-    background-color: coral
+select{
+    flex:1;
+    padding:0 0.5em;
+    color:white;
+}
+.selector::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-left:0px;
+    padding-bottom: -10px;
+    background: #f7e1f3;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+.selector:hover::after{
+    color:pink;
 }
