@@ -1,12 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 
 body{
-    background-image: white;
     font-family: sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../data/twilight.jpg) no-repeat 50% 50% fixed;
+    background: repeat 50% 50% fixed;
     background-size: 100% 100%;
     overflow:hidden;
     -moz-background-size:100% 100%;

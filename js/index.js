@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var hour;
 	function selector() {
 	  var currentDate = new Date();
 	  var timeToronto = currentDate.getTime();
@@ -12,18 +13,19 @@ $(document).ready(function(){
 	  var timeCity = timeUTC + timeDifference*60*60*1000;
 	  currentDate = new Date(timeCity);
 		
-	  var hour = currentDate.getHours();
+	  hour = currentDate.getHours();
 	  var min = currentDate.getMinutes();
 	  var sec = currentDate.getSeconds();
 	  
 	  //format the numbers to be properly aligned
-	  if (hour < 10) hour = "0" + hour;
+	  var tempHour =hour;
+	  if (hour < 10) tempHour = "0" + tempHour;
 	  if (min < 10) min = "0" + min;
 	  if (sec < 10 ) sec = "0" + sec;
 	  
 	  //assign the time at the template
 	  var timeElement = document.getElementById('time');
-	  timeElement.innerText = hour + ":" + min + ":" + sec;
+	  timeElement.innerText = tempHour + ":" + min + ":" + sec;
 	  
 	  var year = currentDate.getFullYear();
 	  var month = currentDate.getMonth() + 1;
@@ -40,5 +42,32 @@ $(document).ready(function(){
 	}
 	//call the method for regular interval of time
 	selector();
+	imageProcess();
+	function imageProcess(){
+		var images =[
+			{
+				url:'data/twilight.jpg'
+			},
+			{
+				url:'data/noon.jpg'
+			},
+			{
+				url:'data/night.jpg'
+			}
+			
+		];
+		var url;
+		if(hour<10 & hour >5){			
+			url = images[0]["url"];					
+		}
+		else if(hour<18 & hour >=11){
+			url = images[1]["url"];
+		}
+		else{
+			url = images[2]["url"];
+		}
+		$('body').css('background-image', 'url('+ url + ')');
+	}
 	setInterval(selector,1000);
+	setInterval(imageProcess,1000);
 });
