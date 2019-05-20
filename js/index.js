@@ -57,7 +57,7 @@ $(document).ready(function(){
 			
 		];
 		var url;
-		if(hour<10 & hour >5){			
+		if(hour<=10 & hour >5){			
 			url = images[0]["url"];					
 		}
 		else if(hour<18 & hour >=11){
