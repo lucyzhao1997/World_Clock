@@ -46,25 +46,32 @@ $(document).ready(function(){
 	function imageProcess(){
 		var images =[
 			{
+				color:"black",
 				url:'data/twilight.jpg'
 			},
 			{
+				color:"black",
 				url:'data/noon.jpg'
 			},
 			{
+				color:"white",
 				url:'data/night.jpg'
 			}
 			
 		];
 		var url;
+		var color;
 		if(hour<=10 & hour >5){			
-			url = images[0]["url"];					
+			url = images[0]["url"];	
+			color = images[0]["color"];			
 		}
 		else if(hour<18 & hour >=11){
 			url = images[1]["url"];
+			color = images[1]["color"];
 		}
 		else{
 			url = images[2]["url"];
+			color = images[2]["color"];
 		}
 		$('body').css('background-image', 'url('+ url + ')');
 	}
