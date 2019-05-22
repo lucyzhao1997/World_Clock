@@ -14,13 +14,13 @@ body{
 div.intro{
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
 div.main-content p {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) 
@@ -48,10 +48,10 @@ select {
     display:inline-block;
     position:relative;
     padding-bottom: -10px;
-    background-color:#f7e1f3;
+    background-color:#bc82b1;
     font-size:15pt;   
     overflow:hidden;
-    border-radius: .5em;
+    border-radius: .3em;
 }
 select.decorated:option:hover{
     background-color: #ebedef inset;
@@ -68,7 +68,7 @@ select{
     position: absolute;
     top: 0;
     right: 0;
-    background: #f7e1f3;
+    background: #bc82b1;
     cursor: pointer;
     pointer-events: none;
     -webkit-transition: .35s all ease;
@@ -76,6 +76,6 @@ select{
     transition: .35s all ease;
   }
 .selector:hover::after{
-    color: #f7e1f3;
+    color: #bc82b1;
     background: #2c3e50
 }

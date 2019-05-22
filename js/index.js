@@ -61,19 +61,20 @@ $(document).ready(function(){
 		];
 		var url;
 		var color;
-		if(hour<=10 & hour >5){			
-			url = images[0]["url"];	
-			color = images[0]["color"];			
+		var index;
+		if(hour<=10 & hour >5){	
+			index = 0;		
 		}
 		else if(hour<18 & hour >=11){
-			url = images[1]["url"];
-			color = images[1]["color"];
+			index =1;
 		}
 		else{
-			url = images[2]["url"];
-			color = images[2]["color"];
+			index = 2;
 		}
+		url = images[index]["url"];	
+		color = images[index]["color"];	
 		$('body').css('background-image', 'url('+ url + ')');
+		$('body').css('color', color);
 	}
 	setInterval(selector,1000);
 	setInterval(imageProcess,1000);
