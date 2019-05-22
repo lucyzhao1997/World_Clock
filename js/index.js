@@ -46,15 +46,15 @@ $(document).ready(function(){
 	function imageProcess(){
 		var images =[
 			{
-				color:"black",
+				color:"#00043a",
 				url:'data/twilight.jpg'
 			},
 			{
-				color:"black",
+				color:"#00043a",
 				url:'data/noon.jpg'
 			},
 			{
-				color:"white",
+				color:"#ced1ff",
 				url:'data/night.jpg'
 			}
 			
