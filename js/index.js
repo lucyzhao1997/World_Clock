@@ -51,7 +51,11 @@ $(document).ready(function(){
 			},
 			{
 				color:"#00043a",
-				url:'data/noon.jpg'
+				url:'data/morning.jpg'
+			},
+			{
+				color:"#ced1ff",
+				url:'data/sunset.jpg'
 			},
 			{
 				color:"#ced1ff",
@@ -62,14 +66,17 @@ $(document).ready(function(){
 		var url;
 		var color;
 		var index;
-		if(hour<=10 & hour >5){	
+		if(hour<=10 & hour >=5){	
 			index = 0;		
-		}
-		else if(hour<18 & hour >=11){
+		}		
+		else if(hour<17 & hour >=11){
 			index =1;
 		}
-		else{
+		else if (hour >=17 & hour <=20){
 			index = 2;
+		}
+		else{
+			index = 3;
 		}
 		url = images[index]["url"];	
 		color = images[index]["color"];	
