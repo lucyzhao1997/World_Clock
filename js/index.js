@@ -47,19 +47,19 @@ $(document).ready(function(){
 		var images =[
 			{
 				color:"#00043a",
-				url:'data/twilight.jpg'
+				url:'data/twilight.png'
 			},
 			{
 				color:"#00043a",
-				url:'data/morning.jpg'
+				url:'data/morning.png'
 			},
 			{
 				color:"#ced1ff",
-				url:'data/sunset.jpg'
+				url:'data/sunset.png'
 			},
 			{
 				color:"#ced1ff",
-				url:'data/night.jpg'
+				url:'data/night.png'
 			}
 			
 		];
